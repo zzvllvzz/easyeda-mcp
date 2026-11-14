@@ -154,4 +154,4 @@ Not tested: multilayer boards and blind vias, net classes and differential pairs
 
 ## License
 
-MIT. The API reference is built from [`@jlceda/pro-api-types`](https://www.npmjs.com/package/@jlceda/pro-api-types) (Apache-2.0), installed as a dependency.
+MIT.
