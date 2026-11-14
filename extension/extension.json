@@ -1,0 +1,49 @@
+{
+	"name": "easyeda-mcp-bridge",
+	"uuid": "fa4ddf53aaa14528647ba26548315171",
+	"displayName": "EasyEDA MCP",
+	"description": "Runs code sent by the local easyeda-mcp server (ws://127.0.0.1:49731) inside EasyEDA Pro. Requires External Interaction.",
+	"version": "0.1.2",
+	"publisher": "local",
+	"engines": { "eda": "^3.0.0" },
+	"license": "MIT",
+	"categories": "Other",
+	"keywords": ["mcp", "bridge", "automation"],
+	"images": { "logo": "./images/logo.png" },
+	"activationEvents": { "onStartupFinished": true },
+	"entry": "./dist/index",
+	"allowExternalInteraction": true,
+	"dependentExtensions": {},
+	"headerMenus": {
+		"home": [
+			{
+				"id": "EasyedaMcp",
+				"title": "MCP",
+				"menuItems": [
+					{ "id": "EasyedaMcpReconnect", "title": "Reconnect", "registerFn": "mcpReconnect" },
+					{ "id": "EasyedaMcpStatus", "title": "Status", "registerFn": "mcpStatus" }
+				]
+			}
+		],
+		"sch": [
+			{
+				"id": "EasyedaMcp",
+				"title": "MCP",
+				"menuItems": [
+					{ "id": "EasyedaMcpReconnect", "title": "Reconnect", "registerFn": "mcpReconnect" },
+					{ "id": "EasyedaMcpStatus", "title": "Status", "registerFn": "mcpStatus" }
+				]
+			}
+		],
+		"pcb": [
+			{
+				"id": "EasyedaMcp",
+				"title": "MCP",
+				"menuItems": [
+					{ "id": "EasyedaMcpReconnect", "title": "Reconnect", "registerFn": "mcpReconnect" },
+					{ "id": "EasyedaMcpStatus", "title": "Status", "registerFn": "mcpStatus" }
+				]
+			}
+		]
+	}
+}

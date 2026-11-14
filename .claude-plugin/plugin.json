@@ -1,0 +1,20 @@
+{
+  "name": "easyeda",
+  "displayName": "EasyEDA Pro",
+  "version": "0.1.0",
+  "description": "Read and draw EasyEDA Pro schematics and PCBs: guarded all-or-nothing edits, netlist and DRC checks, exports, part search, raw editor API.",
+  "author": {
+    "name": "zzvllvzz",
+    "url": "https://github.com/zzvllvzz"
+  },
+  "homepage": "https://github.com/zzvllvzz/easyeda-mcp#readme",
+  "repository": "https://github.com/zzvllvzz/easyeda-mcp",
+  "license": "MIT",
+  "keywords": ["easyeda", "easyeda-pro", "jlceda", "schematic", "pcb", "eda", "mcp"],
+  "mcpServers": {
+    "easyeda": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/index.mjs"]
+    }
+  }
+}

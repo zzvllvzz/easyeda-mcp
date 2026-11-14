@@ -1,0 +1,48 @@
+{
+  "name": "easyeda-pro-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP server for EasyEDA Pro: read and draw schematics and PCBs from Claude Code through a tiny bridge extension, with guarded all-or-nothing edits.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "easyeda",
+    "easyeda-pro",
+    "jlceda",
+    "lceda",
+    "schematic",
+    "pcb",
+    "eda",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "author": "zzvllvzz",
+  "homepage": "https://github.com/zzvllvzz/easyeda-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzvllvzz/easyeda-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zzvllvzz/easyeda-mcp/issues"
+  },
+  "mcpName": "io.github.zzvllvzz/easyeda-mcp",
+  "bin": {
+    "easyeda-pro-mcp": "server/index.mjs"
+  },
+  "files": [
+    "server/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:ext": "node scripts/build-ext.mjs",
+    "test": "node test/smoke.mjs"
+  },
+  "dependencies": {
+    "@jlceda/pro-api-types": "0.4.27",
+    "ws": "^8.18.0"
+  }
+}

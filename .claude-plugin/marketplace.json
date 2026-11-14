@@ -1,0 +1,16 @@
+{
+  "name": "easyeda-mcp",
+  "description": "EasyEDA Pro for Claude Code",
+  "owner": {
+    "name": "zzvllvzz",
+    "url": "https://github.com/zzvllvzz"
+  },
+  "plugins": [
+    {
+      "name": "easyeda",
+      "source": "./",
+      "description": "Read and draw EasyEDA Pro schematics and PCBs: guarded all-or-nothing edits, netlist and DRC checks, exports, part search, raw editor API.",
+      "category": "hardware"
+    }
+  ]
+}
