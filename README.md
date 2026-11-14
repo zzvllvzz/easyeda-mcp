@@ -69,7 +69,7 @@ With EasyEDA open, ask Claude to check the EasyEDA connection. `eda_status` shou
 - `eda_status`: is the editor connected, versions, active project and sheet, state of the bridge.
 - `eda_exec`: run JS inside EasyEDA (`eda`, helpers `h`, `args`, `console`, `store`).
 - `eda_call`: call one API method by its path.
-- `eda_api`: search the API reference built from `@jlceda/pro-api-types`.
+- `eda_api`: search the API reference.
 - `sch_read`: read a sheet: summary, parts with pins, wires, nets, check (`check`), overlaps (`overlaps`), free room (`free`).
 - `sch_draw`: a batch of operations on the sheet as one guarded change (see below).
 - `sch_export`: PDF, PNG, SVG, netlist, BOM to a file.
