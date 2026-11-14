@@ -1,0 +1,42 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.zzvllvzz/easyeda-mcp",
+  "title": "EasyEDA MCP",
+  "description": "Read and draw EasyEDA Pro schematics and PCBs through a bridge extension, with guarded edits.",
+  "repository": {
+    "url": "https://github.com/zzvllvzz/easyeda-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/zzvllvzz/easyeda-mcp#readme",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "easyeda-pro-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EASYEDA_MCP_PORT",
+          "description": "Local port of the bridge extension. Defaults to 49731; the extension has to use the same port.",
+          "format": "number",
+          "isRequired": false
+        },
+        {
+          "name": "EASYEDA_MCP_OUT",
+          "description": "Folder for exported files. Defaults to ~/.easyeda-mcp/out.",
+          "format": "filepath",
+          "isRequired": false
+        },
+        {
+          "name": "EASYEDA_MCP_ORIGINS",
+          "description": "Extra browser origins allowed to connect, comma separated.",
+          "format": "string",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
