@@ -1,5 +1,5 @@
 // Searchable index of the EasyEDA Pro extension API, built from the official
-// typings (@jlceda/pro-api-types). Parsed lazily on first use.
+// typings. Parsed lazily on first use.
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
 
